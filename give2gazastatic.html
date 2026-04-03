@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>give2Gaza — Support Gaza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --pal-green:#007a3d;
+  --pal-red:#ce1126;
+  --navy:#0f172a;
+  --cream:#f8f7f4;
+  --white:#fff;
+  --gray:#6b7280;
+}
+
+body{
+  margin:0;
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+}
+
+/* NAV */
+.nav{
+  background:var(--navy);
+  padding:1rem 2rem;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* HERO */
+.hero{
+  background:var(--navy);
+  color:white;
+  padding:6rem 2rem;
+  text-align:center;
+}
+.hero h1{
+  font-family:'Lora',serif;
+  font-size:3rem;
+}
+.hero h1 em{
+  color:var(--pal-red);
+  font-style:normal;
+}
+.hero p{
+  max-width:600px;
+  margin:auto;
+  color:#ccc;
+}
+
+.btn{
+  background:var(--pal-green);
+  color:white;
+  padding:1rem 2rem;
+  border-radius:10px;
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+}
+.btn:hover{
+  background:#006233;
+}
+
+/* SECTION */
+.section{
+  padding:4rem 2rem;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+}
+
+/* DONATE BOX */
+.donate{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  max-width:400px;
+  margin:auto;
+}
+input{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+  color:var(--gray);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div>give2Gaza</div>
+  <div>Donate</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Support Gaza<br><em>Stand with humanity</em></h1>
+  <p>
+    Families in Gaza are facing severe shortages of food, clean water, and medical care.
+    Your support helps deliver urgent humanitarian aid to those affected.
+  </p>
+  <a href="#donate" class="btn">Donate Now</a>
+</section>
+
+<!-- WHY -->
+<section class="section">
+  <h2>Why your donation matters</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Emergency food relief</h3>
+      <p>Help provide essential meals to families facing food shortages.</p>
+    </div>
+
+    <div class="card">
+      <h3>Medical support</h3>
+      <p>Support hospitals and clinics with critical supplies and medicine.</p>
+    </div>
+
+    <div class="card">
+      <h3>Clean water access</h3>
+      <p>Provide safe drinking water to communities in urgent need.</p>
+    </div>
+
+    <div class="card">
+      <h3>Shelter & recovery</h3>
+      <p>Help displaced families find safety and rebuild their lives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section">
+  <h2>Your impact</h2>
+
+  <div class="card">$10 — Provides food for a family for several days</div>
+  <div class="card">$25 — Helps supply clean drinking water</div>
+  <div class="card">$50 — Supports medical supplies</div>
+  <div class="card">$100 — Helps provide shelter materials</div>
+</section>
+
+<!-- DONATE -->
+<section class="section" id="donate">
+  <div class="donate">
+    <h2>Make a donation</h2>
+
+    <input type="number" placeholder="Amount ($)">
+    <input type="text" placeholder="Your name">
+
+    <a href="https://buy.stripe.com/test_bJeeVf3WfgkndAJ5TCcbC00" class="btn">Donate Securely</a>
+
+    <p style="font-size:12px; margin-top:10px;">
+      Funds are distributed through trusted humanitarian aid partners supporting Gaza.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 give2Gaza — Supporting humanitarian aid efforts
+</footer>
+
+</body>
+</html>
